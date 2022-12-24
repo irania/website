@@ -1,0 +1,68 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import CardWorkExprience from "@components/cards/CardWorkExprience.astro";
+import CardProject from "@components/cards/CardProject.astro";
+
+const posts = (await Astro.glob("./blog/*.{md,mdx}")).sort(
+  (a, b) =>
+    new Date(b.frontmatter.pubDate).valueOf() -
+    new Date(a.frontmatter.pubDate).valueOf()
+);
+
+const last_posts = posts.slice(0, 3);
+---
+
+<BaseLayout>
+  <div class="pb-12 mt-5">
+    <div class="text-3xl py-3 font-bold">About Me</div>
+    <div class="py-2 text-justify text-lg">
+      Atefeh, Ph.D. candidate in Artificial Intelligence at the University of
+      Tehran. My research focus is on cognitive science, with a particular
+      interest in using AI to detect diseases. I have experience in detecting
+      Autism and am currently working on early diagnosis of Parkinson's within
+      the field of cognitive science. I am passionate about the intersection of
+      AI and human cognition and strive to make a positive impact through my
+      work. In addition to my research, I am also a game developer and have
+      experience as a full-stack web developer. Always seeking new opportunities
+      to learn and grow.
+    </div>
+  </div>
+
+  <section class="mb-4">
+    <h1 class="text-2xl w-full font-bold mb-2">Work Experience</h1>
+    <CardWorkExprience
+      name="Pars Cognition"
+      date="2015 - Ongoing"
+      position="Lead Full Stack Developer"
+      href=""
+    >
+      <ul class="list-disk ml-6 mt-3" style="list-style: disc;">
+        <li>Technical team management</li>
+        <li>Unity game designer and developer</li>
+      </ul>
+    </CardWorkExprience>
+    <CardWorkExprience
+      name="University of Tehran"
+      date="Dec 2021 - Ongoing"
+      position="Researcher"
+    >
+      Diagnosis Parkinson's disease using AI
+    </CardWorkExprience>
+    <CardWorkExprience
+      name="Mersateb Co."
+      date="2014 - 2018"
+      position="Full Stack and Android Developer"
+      href="https://mersateb.com/en"
+    >
+      <ul class="list-disk ml-6 mt-3" style="list-style: disc;">
+        <li>Medical device software standard (62304) Implementor</li>
+        <li>Web developer</li>
+      </ul>
+    </CardWorkExprience>
+    <CardWorkExprience
+      name="Teacher Assistance"
+      date="2014 - 2015"
+      position="Courses: Artificial Intelligence, Operating Systems"
+    />
+  </section>
+</BaseLayout>

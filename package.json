@@ -1,0 +1,28 @@
+{
+  "name": "M.H.Saadatfar Personal Website",
+  "description": "M.H.Saadatfar Personal Website",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/image": "^0.12.0",
+    "@astrojs/mdx": "^0.11.1",
+    "@astrojs/rss": "^1.0.1",
+    "@astrojs/sitemap": "^1.0.0",
+    "@astrojs/tailwind": "^2.1.3",
+    "astro": "^1.6.11",
+    "daisyui": "^2.42.1",
+    "sass": "^1.56.1",
+    "sharp": "^0.31.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.7"
+  }
+}
