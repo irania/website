@@ -16,53 +16,41 @@ const last_posts = posts.slice(0, 3);
   <div class="pb-12 mt-5">
     <div class="text-3xl py-3 font-bold">About Me</div>
     <div class="py-2 text-justify text-lg">
-      Atefeh, Ph.D. candidate in Artificial Intelligence at the University of
-      Tehran. My research focus is on cognitive science, with a particular
-      interest in using AI to detect diseases. I have experience in detecting
-      Autism and am currently working on early diagnosis of Parkinson's within
-      the field of cognitive science. I am passionate about the intersection of
-      AI and human cognition and strive to make a positive impact through my
-      work. In addition to my research, I am also a game developer and have
-      experience as a full-stack web developer. Always seeking new opportunities
-      to learn and grow.
+      I am a Machine Learning Engineer and Ph.D. candidate in Artificial Intelligence at the University of Tehran,
+      specializing in Agentic AI, LLMs, and multimodal learning. Currently, I work as a Machine Learning Researcher
+      at the Pacific Parkinson Research Centre at UBC Hospital, where I design and productionize end-to-end ML pipelines
+      integrating video, audio, and clinical data for neurological assessment. My research focuses on leveraging weak
+      supervision, temporal modeling, and explainable AI to bridge the gap between research prototypes and deployment-ready
+      systems. I am passionate about building scalable ML systems that make a real-world impact in healthcare and cognitive science.
     </div>
   </div>
 
   <section class="mb-4">
     <h1 class="text-2xl w-full font-bold mb-2">Work Experience</h1>
     <CardWorkExprience
+      name="Pacific Parkinson Research Centre at UBC Hospital"
+      date="Jul 2024 - Present"
+      position="Machine Learning Researcher"
+      href="https://mckeownlab.ca/"
+    >
+      <ul class="list-disk ml-6 mt-3" style="list-style: disc;">
+        <li>Designed and productionized end-to-end ML pipelines integrating multimodal data (video, audio, metadata) with weakly supervised labels</li>
+        <li>Developed agent-based reporting architectures for explainable AI and automated decision workflows</li>
+        <li>Built real-time inference services integrated into clinician-facing applications</li>
+        <li>Led and mentored a cross-functional team of 7+ researchers and engineers</li>
+      </ul>
+    </CardWorkExprience>
+    <CardWorkExprience
       name="Pars Cognition"
-      date="2015 - Ongoing"
+      date="2014 - 2023"
       position="Lead Full Stack Developer"
-      href=""
+      href="https://clinic.maghzineh.ir/"
     >
       <ul class="list-disk ml-6 mt-3" style="list-style: disc;">
-        <li>Technical team management</li>
-        <li>Unity game designer and developer</li>
+        <li>Led design and development of large-scale production software systems serving 4,000+ active users</li>
+        <li>Integrated ML-driven analytics pipelines (time-series modeling, voice features, behavioral metrics)</li>
+        <li>Built scalable backend systems supporting real-time data ingestion and ML inference</li>
       </ul>
     </CardWorkExprience>
-    <CardWorkExprience
-      name="University of Tehran"
-      date="Dec 2021 - Ongoing"
-      position="Researcher"
-    >
-      Diagnosis Parkinson's disease using AI
-    </CardWorkExprience>
-    <CardWorkExprience
-      name="Mersateb Co."
-      date="2014 - 2018"
-      position="Full Stack and Android Developer"
-      href="https://mersateb.com/en"
-    >
-      <ul class="list-disk ml-6 mt-3" style="list-style: disc;">
-        <li>Medical device software standard (62304) Implementor</li>
-        <li>Web developer</li>
-      </ul>
-    </CardWorkExprience>
-    <CardWorkExprience
-      name="Teacher Assistance"
-      date="2014 - 2015"
-      position="Courses: Artificial Intelligence, Operating Systems"
-    />
   </section>
 </BaseLayout>

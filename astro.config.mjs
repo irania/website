@@ -6,7 +6,7 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://mhsaadatfar.dev',
+  site: 'https://iamatefeh.ir',
   server: { port: 12345, host: true},
   integrations: [
     mdx(), sitemap(), tailwind(),
